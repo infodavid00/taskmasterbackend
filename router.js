@@ -19,21 +19,17 @@ router.get("/", (rq, rs) =>
   rs.status(200).json({
     acknowleged: true,
     useage: {
-      convertNumbers: "GET http://localhost:10000/convertNumbers?value=864933",
-      countUniqueValues:
-        "GET http://localhost:10000/countUniqueValues?value=helloworld",
-      findOddEven: "GET http://localhost:10000/findOddEven?value=2,3",
-      idGenerator: "GET http://localhost:10000/idGenerator?value=20",
-      letterCount: "GET http://localhost:10000/letterCount?value=helloworld",
-      manualStringReverser:
-        "GET http://localhost:10000/manualStringReverser?value=helloworld",
-      otpGenerator: "GET http://localhost:10000/otpGenerator",
-      passwordGenerator:
-        "GET http://localhost:10000/passwordGenerator?value=hard",
-      sortNumbers:
-        "GET http://localhost:10000/sortNumbers?value=39,76,55,115,63,2,5,21",
-      wordCount: "GET http://localhost:10000/wordCount?value=hello world",
-      randomNumber: "GET http://localhost:10000/randomNumber?value=300",
+      convertNumbers: "GET /convertNumbers?value=864933",
+      countUniqueValues: "GET /countUniqueValues?value=helloworld",
+      findOddEven: "GET /findOddEven?value=2,3",
+      idGenerator: "GET /idGenerator?value=20",
+      letterCount: "GET /letterCount?value=helloworld",
+      manualStringReverser: "GET /manualStringReverser?value=helloworld",
+      otpGenerator: "GET /otpGenerator",
+      passwordGenerator: "GET /passwordGenerator?value=hard",
+      sortNumbers: "GET /sortNumbers?value=39,76,55,115,63,2,5,21",
+      wordCount: "GET /wordCount?value=hello world",
+      randomNumber: "GET /randomNumber?value=300",
     },
   })
 );
