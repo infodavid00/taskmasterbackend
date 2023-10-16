@@ -9,4 +9,4 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
-app.listen(port, () => console.log(`app running at ${port}`));
+app.listen(port);
